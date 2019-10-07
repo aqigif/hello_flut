@@ -9,20 +9,6 @@ class HomeScreen extends StatelessWidget {
         body: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
       SearchBar(),
       CityList(),
-      // Column(
-      //   children: <Widget>[
-      //     Text(
-      //       "bIg promo for u",
-      //       textAlign: TextAlign.start,
-      //       style: TextStyle(fontSize: 10),
-      //     ),
-      //     Container(
-      //       child: Container(
-      //         color: Colors.red,
-      //       ),
-      //     )
-      //   ],
-      // )
     ]));
   }
 }
