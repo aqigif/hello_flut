@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'city_item.dart';
 
 class CurrentCityItem extends StatelessWidget {
   @override
@@ -14,11 +15,11 @@ class CurrentCityItem extends StatelessWidget {
       ),
       Column(children: <Widget>[
         Container(
-            width: 50.0,
-            height: 50.0,
+            width: 60.0,
+            height: 60.0,
             margin: const EdgeInsets.only(left: 5.0, right: 5.0, bottom: 5.0),
             decoration: new BoxDecoration(
-              borderRadius: new BorderRadius.circular(25.0),
+              borderRadius: new BorderRadius.circular(30.0),
               color: Colors.red,
             ),
             child: Icon(
@@ -33,25 +34,7 @@ class CurrentCityItem extends StatelessWidget {
         )
       ]),
       Column(children: [
-        Container(
-          height: 50.0,
-          width: 50.0,
-          margin: const EdgeInsets.only(left: 5.0, right: 5.0, bottom: 5.0),
-          decoration: new BoxDecoration(
-            image: DecorationImage(
-              image: new NetworkImage(
-                  'https://upload.wikimedia.org/wikipedia/commons/b/b1/Merdeka_Square_Monas_02.jpg'),
-              fit: BoxFit.fill,
-            ),
-            shape: BoxShape.circle,
-          ),
-        ),
-        Text(
-          "Jakarta",
-          textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(fontSize: 10),
-        )
+        CityItem()
       ])
     ]);
   }

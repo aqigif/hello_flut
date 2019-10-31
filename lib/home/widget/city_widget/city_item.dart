@@ -7,8 +7,8 @@ class CityItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: [
       Container(
-        height: 50.0,
-        width: 50.0,
+        height: 60.0,
+        width: 60.0,
         margin: const EdgeInsets.only(left: 5.0, right: 5.0, bottom: 5.0),
         decoration: new BoxDecoration(
           image: DecorationImage(

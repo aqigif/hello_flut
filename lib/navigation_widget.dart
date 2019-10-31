@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'placeholder_widget.dart';
-import 'home_widget.dart';
+import 'package:flut_test/home/index.dart';
 
 class Navigation extends StatefulWidget {
   @override
